@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
-import { Container } from './styles';
-export default function Home() {
+import { Container } from '../styles/styles';
+
+const Home: React.FC = () => {
   const [moneyA, setMoneyA] = useState(0);
   const [oddA, setOddA] = useState(1);
   const [moneyB, setMoneyB] = useState(0);
@@ -140,4 +141,6 @@ export default function Home() {
       </footer>
     </Container>
   );
-}
+};
+
+export default Home;
